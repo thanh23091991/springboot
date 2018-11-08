@@ -9,5 +9,9 @@ public interface AddressService {
 	List<Address> findAll();
 
 	Optional<Address> findById(Integer id);
+	
+	String deleteById(Integer id);
+	
+	
 
 }

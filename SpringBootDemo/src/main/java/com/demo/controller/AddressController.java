@@ -30,4 +30,9 @@ public class AddressController {
 	public Optional<Address> findById(@PathVariable int id){
 		return addressService.findById(id);
 	}
+	
+	@RequestMapping("/delete/{id}")
+	public String deleteById(@PathVariable int id) {
+		return addressService.deleteById(id);
+	}
 }
